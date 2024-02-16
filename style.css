@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Mulish", sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+/* #app > * {
+    border: 1px solid red;
+} */
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+    max-width: 47rem;
+    margin: auto;
+}
+
+
+
+
+
+
+/* ------------ */
+/* header */
+
+header {
+    display: flex;
+    padding: 1.6rem 2.8rem;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    background: #065E7C;
+}
+
+
+.input-wrapper input {
+    padding: 1.2rem 7.3rem 1.2rem 1.4rem;
+    background: #387E96;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* header */
+/* ------------ */
+
+
+
+/* ------------ */
+/* main */
+
+
+.main-cat {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 3.0rem 6.6rem .8rem 2.2rem;
+}
+
+.likes {
+    margin-left: 2.2rem;
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 3.0rem;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-inline: 2.2rem 2.6rem;
+}
+
+p + p {
+    margin-top: 4.0rem;
+}
+
+
+figure {
+    display: flex;
+    margin-top: 3.2rem;
+    gap: 1.6rem;
+    margin-inline: 2.2rem 2.6rem;
+}
+
+figure img {
+    border-radius: .5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.gallery-p {
+    margin: 0;
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    
+}
+
+/* main */
+/* ------------ */
+
+
+
+/* footer */
+
+footer {
+    font-size: 1.6rem;
+    padding: 2.6rem 1.6rem;
+    background: #387E96;
+    color: #fff;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    margin-top: 3.9rem;
+}
+
+
+
+
+/* ------------------------------------Media Queries------------------------------------ */
+
+
+
+@media (min-width: 768px) {
+    
+    #app {
+        max-width: 100%;
+    }
+
+    header {
+        height: 7.2rem;
+    }
+
+    input {
+        width: 108.3rem;
+
+        }
+
+    /* desktop1 */
+    
+    main {
+        display: flex;
+        padding: 4rem 0;
+        max-width: 1220px;
+        gap: 3.4rem;
+        margin: auto;
+        justify-content: center;
+        }
+
+    .main-cat {
+        border-radius: .5rem;
+        width: 80rem;
+        height: 40rem;
+    }
+
+    .h2-likes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 80rem;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    .likes {
+        margin: 0;
+        gap: 1.2rem;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    /* desktop2 */
+
+    figure {
+        width: 38rem;
+        height: 8.4rem;
+        margin-inline: 0;
+    }
+
+    /* footer */
+
+    footer {
+        height: 6.4rem;
+        margin: 0;
+    }
+}
